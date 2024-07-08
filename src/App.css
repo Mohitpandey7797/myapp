@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    background-color: rgba(44, 30, 242);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+}
+.header{
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    text-align: center;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.header > a{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+.container{
+    background-color: rgba(242, 221, 138, 0.774);
+    width: 70%;
+    margin: auto;
+    min-height: 100vh;
+    padding: 4vmax 8vmax;
+    box-sizing: border-box;
+}
+.container>h1{
+    text-align: center;
+    margin: 30px;
+    font-size: 2.5rem;
+}
+.container>form{
+    display: flex;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+input,
+textarea,
+button{
+    padding: 15px;
+    border: 1px solid rgba(0,0,0.214);
+    border-radius: 5px;
+    margin: 10px 0px;
+    font-size: 1.2rem;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button{
+    border: none;
+    cursor: pointer;
+    background-color: rgba(82, 82, 82, 0.829);
+    color: white;
 }
-
-.App-link {
-  color: #61dafb;
+/* *{
+    border: 1px solid;
+} */
+.task{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task>div{
+    width: 100%;
+}
+.task button{
+   
+   border-radius: 100%;
+   width: 20px;
+   height: 20px;
+   font-size: 1.2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(138, 13, 38);
+}
+.task button:hover{
+    background-color: rgb(220, 20, 60);
+    
+}
+.task span{
+    color: rgb(139, 138, 138);
+}
+.contact{
+    background-color: crimson;
+    width: 100%;
+    height: 100vh;
+}
+.about{
+    background-color: rgb(203, 220, 20);
+    width: 100%;
+    height: 100vh;
+}
+footer{
+    background-color: rgba(30,30,30);
+    height: 300px;
 }
